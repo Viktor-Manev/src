@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="PTSPensjon.AboutPage"
+			 xmlns:i18n="clr-namespace:PTSPensjon;assembly=PTSPensjon"
+			 xmlns:GridLength="clr-namespace:PTSPensjon"
+			 xmlns:color="clr-namespace:PTSPensjon"
+			 xmlns:double="clr-namespace:PTSPensjon.Statics">
+
+	<Grid RowSpacing="0">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._MainMenuRow_001}" />
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._MainMenuRow_002}" />
+        </Grid.RowDefinitions>
+
+		<BoxView Grid.Row="0" Color="{x:Static color:PTSPalette._001}" />
+        <BoxView Grid.Row="1" Color="{x:Static color:PTSPalette._002}" />
+
+        <Grid Grid.Row="0">
+			<StackLayout>
+				<Image x:Name="header" Source="header.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="30"  />
+
+			</StackLayout>
+
+			<StackLayout Padding="16" HorizontalOptions="Center" VerticalOptions="End" >
+				<Image Source="logo.png" HeightRequest="23" />
+        	</StackLayout>
+			<StackLayout Padding="16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Start">
+					<Image Source="BackButton.png" HeightRequest="20" />
+					<Image.GestureRecognizers>
+      					<TapGestureRecognizer Tapped="NavigateBack"  />
+  					</Image.GestureRecognizers>
+			</StackLayout>
+
+			<StackLayout Padding="0,0,20,16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+				<Image Source="MasterMenuIcon.png" HeightRequest="20" />
+				<Image.GestureRecognizers>
+      				<TapGestureRecognizer Tapped="MasterMenuTap"  />
+  				</Image.GestureRecognizers>
+			</StackLayout>
+		</Grid>
+
+        <ScrollView Grid.Row="1" Orientation="Vertical" >
+        	<StackLayout>
+            	<Label Text="{i18n:Translate HomeMenuItem_About}" FontSize="{x:Static double:FontSizes.TitleSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._005}" Margin="20,10" />
+				<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="2" />
+
+				<!-- Place holder data -->
+				<StackLayout Orientation="Horizontal" Padding="20,10">
+					<StackLayout Orientation="Vertical">
+						<Label Text="{i18n:Translate About_header1}" FontSize="16" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+						<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+						<Label Text="{i18n:Translate About_desc1}" 
+					   		   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" Margin="2,2" />
+					</StackLayout>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" Padding="20,10" >
+					<StackLayout Orientation="Vertical">
+						<Label Text="{i18n:Translate About_header2}" FontSize="16" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+						<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+						<Label Text="{i18n:Translate About_desc2}" 
+					   		   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" Margin="2,2" />
+					</StackLayout>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" BackgroundColor="{x:Static color:PTSPalette._006}" Padding="13,0" Margin="0,0,0,-5" HeightRequest="46" >
+					<StackLayout WidthRequest="46">
+						<RelativeLayout>
+							<Image Source="Knapp.png" Margin="7" />
+							<Image Source="IconPost.png" Margin="15" />
+						</RelativeLayout>
+					</StackLayout>
+					<Label x:Name="postalAddress" VerticalTextAlignment="Center" />
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" BackgroundColor="{x:Static color:PTSPalette._002}" Padding="13,0" Margin="0,0,0,-5" HeightRequest="46" >
+					<StackLayout WidthRequest="46">
+						<RelativeLayout>
+							<Image Source="Knapp.png" Margin="7" />
+							<Image Source="IconPhone.png" Margin="15" />
+						</RelativeLayout>
+					</StackLayout>
+					<Label x:Name="phoneLabel" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" />
+					<StackLayout.GestureRecognizers> 
+						<TapGestureRecognizer Tapped="CallPTS" /> 
+					</StackLayout.GestureRecognizers>
+				</StackLayout>
+
+				<StackLayout Orientation="Horizontal" BackgroundColor="{x:Static color:PTSPalette._006}" Padding="13,0" Margin="0,0,0,-5" HeightRequest="46" >
+					<StackLayout WidthRequest="46">
+						<RelativeLayout>
+							<Image Source="Knapp.png" Margin="7" />
+							<Image Source="IconMessages.png" Margin="15" />
+						</RelativeLayout>
+					</StackLayout>
+					<Label x:Name="emailLabel" VerticalTextAlignment="Center" />
+					<StackLayout.GestureRecognizers> 
+						<TapGestureRecognizer Tapped="EmailPTS" /> 
+					</StackLayout.GestureRecognizers>
+				</StackLayout>					
+			</StackLayout>
+		</ScrollView>
+	</Grid>
+</ContentPage>

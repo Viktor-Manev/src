@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView x:Class="PTSPensjon.SwitchboardButton" 
+			 xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:color="clr-namespace:PTSPensjon">
+
+
+	<Grid RowSpacing="0" ColumnSpacing="0">
+
+		<Grid.RowDefinitions>
+            <RowDefinition Height="0" />
+			<RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+			<RowDefinition Height="45" />
+        </Grid.RowDefinitions>
+		
+		<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="5" />
+        </Grid.ColumnDefinitions>
+
+        <!--<BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Color="Purple" />
+        <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" Color="Green" />
+        <BoxView Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4" Color="Blue" />
+		<BoxView Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Color="Yellow" />
+
+		<BoxView Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" Color="Cyan" />-->
+
+            <Image x:Name="SwitchboardIcon" Source="{Binding Icon}" VerticalOptions="Fill"
+      	    	   Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" />
+		    <Image x:Name="SwitchboardOverlayicon" Source="{Binding OverlayIcon}" VerticalOptions="Fill" Margin="20"
+                   Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2"/>
+            
+		<RelativeLayout Grid.Row="0" Grid.RowSpan="2" Grid.Column="2" Grid.ColumnSpan="2" 
+						Margin="20,0,8,8">
+        		<Image x:Name="PushIcon" Source="red_push_label"  />
+				<Label x:Name="PushIconLabel" Text="{Binding PushIconText}" FontSize="14" 
+					   VerticalOptions="Center" HorizontalOptions="Center" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" />
+		</RelativeLayout>
+		
+		<Label Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" x:Name="SwitchboardLabel" HorizontalOptions="Center" VerticalOptions="Start" HorizontalTextAlignment="Center"
+               Text="{Binding Label}"
+               TextColor="{x:Static color:PTSPalette._007}" />
+		
+	</Grid>
+
+</ContentView>

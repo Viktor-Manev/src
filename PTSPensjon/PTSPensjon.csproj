@@ -1,0 +1,199 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{449EA6F4-23DB-45D5-9D77-35BDE9FC6622}</ProjectGuid>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PTSPensjon</RootNamespace>
+    <AssemblyName>PTSPensjon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ReleaseVersion>1.2.36</ReleaseVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <DefineConstants></DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pages\Switchboard\MainSwitchboard_XAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Switchboard\SwitchboardButton.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\IntroPages\IntroPage1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\IntroPages\IntroPage2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\IntroPages\IntroPage3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\IntroPages\IntroPage4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\IntroPages\IntroPage5.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMenuPages\AboutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMenuPages\HelpPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMenuPages\SettingsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MasterDetailPage\MasterMenuPage_XAML.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\TextResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resx\TextResources.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>TextResources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\IntroPages\IntroPaginator.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMenuPages\HeaderTemplate.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\faq_norwegian.html" />
+    <EmbeddedResource Include="Pages\MainMenuPages\PensionCalculator\PensionEstimator.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMenuPages\PensionCalculator\PensionResult.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\MainMenuPages\RulesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Server\faq_english.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="App.cs" />
+    <Compile Include="Statics\FontSizes.cs" />
+    <Compile Include="Statics\Palette.cs" />
+    <Compile Include="Localization\TranslateExtension.cs" />
+    <Compile Include="Extensions\ExceptionExtensions.cs" />
+    <Compile Include="Extensions\IEnumerableExtensions.cs" />
+    <Compile Include="Extensions\IListExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Pages\IntroPages\IntroCarousel.cs" />
+    <Compile Include="Statics\Links.cs" />
+    <Compile Include="Statics\PTSPalette.cs" />
+    <Compile Include="Pages\Switchboard\MainSwitchboard_XAML.xaml.cs">
+      <DependentUpon>MainSwitchboard_XAML.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Switchboard\SwitchboardButton.xaml.cs">
+      <DependentUpon>SwitchboardButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IntroPages\IntroPage1.xaml.cs">
+      <DependentUpon>IntroPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\PlatformCulture.cs" />
+    <Compile Include="Pages\IntroPages\IntroPage2.xaml.cs">
+      <DependentUpon>IntroPage2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IntroPages\IntroPage3.xaml.cs">
+      <DependentUpon>IntroPage3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IntroPages\IntroPage4.xaml.cs">
+      <DependentUpon>IntroPage4.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\IntroPages\IntroPage5.xaml.cs">
+      <DependentUpon>IntroPage5.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMenuPages\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMenuPages\HelpPage.xaml.cs">
+      <DependentUpon>HelpPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MasterDetailPage\MasterMenuConstructor.cs" />
+    <Compile Include="Pages\MainMenuPages\SettingsPage.xaml.cs">
+      <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MasterDetailPage\MasterMenuPage_XAML.xaml.cs">
+      <DependentUpon>MasterMenuPage_XAML.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resx\TextResources.Designer.cs">
+      <DependentUpon>TextResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\ILocalize.cs" />
+    <Compile Include="Statics\PTSStyles.cs" />
+    <Compile Include="Pages\IntroPages\IntroPaginator.xaml.cs">
+      <DependentUpon>IntroPaginator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Resx\TextResources.en.Designer.cs">
+      <DependentUpon>TextResources.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMenuPages\HeaderTemplate.xaml.cs">
+      <DependentUpon>HeaderTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Extensions\DictionaryExt.cs" />
+    <Compile Include="Server\RSSReader.cs" />
+    <Compile Include="Server\FAQReader.cs" />
+    <Compile Include="Extensions\FloatExt.cs" />
+    <Compile Include="Server\HtmlUtils.cs" />
+    <Compile Include="Pages\MainMenuPages\PensionCalculator\PensionEstimator.xaml.cs">
+      <DependentUpon>PensionEstimator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\MainMenuPages\PensionCalculator\PensionInput.cs" />
+    <Compile Include="Pages\MainMenuPages\PensionCalculator\PensionResult.xaml.cs">
+      <DependentUpon>PensionResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Native\Text\ITextMeter.cs" />
+    <Compile Include="Native\Text\TextService.cs" />
+    <Compile Include="Pages\IntroPages\IntroPage5ViewModel.cs" />
+    <Compile Include="Extensions\JsonDotNetExt.cs" />
+    <Compile Include="Statics\OperatorLocalizationWidget.cs" />
+    <Compile Include="Pages\MainMenuPages\RulesPage.xaml.cs">
+      <DependentUpon>RulesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\Localization.cs" />
+    <Compile Include="Pages\Navigation\NavigationService.cs" />
+    <Compile Include="Native\Storage\PlayerPrefs.cs" />
+    <Compile Include="Native\Storage\IStorage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Localization\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Statics\" />
+    <Folder Include="Pages\IntroPages\" />
+    <Folder Include="Pages\MainMenuPages\" />
+    <Folder Include="Pages\MasterDetailPage\" />
+    <Folder Include="Pages\Switchboard\" />
+    <Folder Include="Native\" />
+    <Folder Include="Resx\" />
+    <Folder Include="Server\" />
+    <Folder Include="Pages\MainMenuPages\PensionCalculator\" />
+    <Folder Include="Native\Text\" />
+    <Folder Include="Pages\Navigation\" />
+    <Folder Include="Native\Storage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="project.json" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

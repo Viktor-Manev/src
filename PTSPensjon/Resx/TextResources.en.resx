@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="IntroPage_1_desc" xml:space="preserve">
+    	<value>We are here to assist you with your pension</value>
+	</data>
+	<data name="IntroPage_2_desc" xml:space="preserve">
+    	<value>In this app you can learn everything about the scheme, apply for a pension, or simulate your expected pension</value>
+	</data>
+	<data name="IntroPage_3_desc" xml:space="preserve">
+    	<value>You will also be able to read news and messages from us, or contact our servicedesk</value>
+	</data>
+	<data name="IntroPage_4_desc" xml:space="preserve">
+    	<value>We are here to help you with all your questions. Happy customers and members is our goal!</value>
+	</data>
+	<data name="IntroPage_5_desc" xml:space="preserve">
+    	<value>We have made a short film to explain how the app works</value>
+	</data>
+
+	<data name="IntroPage_5_video_path" xml:space="preserve">
+    	<value>Pensjonstrygden_vid_8_eng.mp4</value>
+	</data>
+
+	<data name="IntroPages_skip_intro" xml:space="preserve">
+    	<value>Skip</value>
+	</data>
+
+	<!-- Main Switchboard XAML -->
+	<data name="HomeMenuItem_Messages" xml:space="preserve">
+    	<value>Messages</value>
+	</data>
+	<data name="HomeMenuItem_Seatime" xml:space="preserve">
+    	<value>Seagoing service</value>
+	</data>
+	<data name="HomeMenuItem_ApplyPension" xml:space="preserve">
+    	<value>Apply for pension</value>
+	</data>
+
+	<data name="HomeMenuItem_News" xml:space="preserve">
+    	<value>News</value>
+	</data>
+	<data name="HomeMenuItem_Calculator" xml:space="preserve">
+    	<value>Calculator</value>
+	</data>
+	<data name="HomeMenuItem_Rules" xml:space="preserve">
+    	<value>Rules</value>
+	</data>
+	
+	<data name="HomeMenuItem_Help" xml:space="preserve">
+    	<value>Help</value>
+	</data>
+	<data name="HomeMenuItem_Settings" xml:space="preserve">
+    	<value>Settings</value>
+	</data>
+	<data name="HomeMenuItem_About" xml:space="preserve">
+    	<value>About PTS</value>
+	</data>	
+
+	<!-- Master Detail Page -->
+
+	<!-- News Page -->
+	
+	<!-- Retirement calculator Page -->
+	<data name="Calculator_header" xml:space="preserve">
+    	<value>Simulate pension</value>
+	</data>
+	<data name="Calculator_desc" xml:space="preserve">
+    	<value>Here you can perform a simplified simulation of your pension.&#x0a;&#x0a;If you wish to have a more accurate estimation of your pension rights you can do that in our &lt;a href="https://medlem.pts.no/Pensjonskalkulator/Info/" &gt;members portal&lt;/a&gt;.&#x0a;</value>
+	</data>
+	<data name="Calculator_field1" xml:space="preserve">
+    	<value>Your year of birth</value>
+	</data>
+	<data name="Calculator_field2" xml:space="preserve">
+    	<value>Number of months of seagoing service in group 1</value>
+	</data>
+	<data name="Calculator_field3" xml:space="preserve">
+    	<value>Number of months of seagoing service in group 2 before 30.04.93</value>
+	</data>
+	<data name="Calculator_field4" xml:space="preserve">
+    	<value>Number of months of seagoing service in group 2 after 01.05.93</value>
+	</data>
+	<data name="Calculator_field5" xml:space="preserve">
+    	<value>Number of dependent children under the age of 18</value>
+	</data>
+	<data name="Calculator_calculate_button" xml:space="preserve">
+        <value>Calculate my pension</value>
+    </data>
+
+	<!-- Error handling -->
+	<data name="Calculator_error_title" xml:space="preserve">
+    	<value>Warning</value>
+	</data>
+	<data name="Calculator_error_desc" xml:space="preserve">
+    	<value>Incorrect value</value>
+	</data>
+	<data name="Calculator_error_close" xml:space="preserve">
+    	<value>OK</value>
+	</data>
+
+	<!-- Retirement Result Page -->
+	<data name="CalcResult_title" xml:space="preserve">
+    	<value>Result</value>
+	</data>
+	<data name="CalcResult_header" xml:space="preserve">
+    	<value>Estimate pension</value>
+	</data>
+	<data name="CalcResult_field1" xml:space="preserve">
+    	<value>Pension with means-tested supplementary payment of {0}%</value>
+	</data>
+	<data name="CalcResult_field2" xml:space="preserve">
+    	<value>Pension without means-tested supplementary payment</value>
+	</data>
+	<data name="CalcResult_field3" xml:space="preserve">
+    	<value>Refund of pension contributions</value>
+	</data>
+	
+		<!-- Rules Page -->
+	<data name="Rules_title" xml:space="preserve">
+    	<value>Regulations</value>
+	</data>
+
+	<data name="Rules_desc" xml:space="preserve">
+    	<value>﻿If you have worked on Norwegian vessels or mobile rigs, you may be entitled to an early retirement pension for seamen when you are aged between 60 and 67.&#x0a;&#x0a; To qualify for a pension, you must have accrued a minimum of 150 months of seagoing service. Seagoing service on vessels in other EEA countries, fishing vessels and state-owned vessels also count towards your seagoing service. You may be entitled to a pension from your 60th birthday if you have accrued a minimum of 120 months of seagoing service after the age of 40 and are no longer working at sea. If you do not meet the requirement for 150 months of seagoing service, you may be entitled to a refund of your pension contributions. This is a one-off payment.</value>
+	</data>
+
+	<data name="Rules_header1" xml:space="preserve">
+    	<value>Payment of premiums</value>
+	</data>
+	<data name="Rules_desc1" xml:space="preserve">
+    	<value>Both you and your employer pay pension premiums/contributions. Both parts constitute contributions to your pension. The size of your pension premium/contribution depends on the position/salary level you have and on how many days you work a month. Contribution rates change every year as a result of adjustment of the National Insurance scheme basic amount.&#x0a;&#x0a;Your employer pays a contribution which is equivalent to 3.3% of your gross monthly income. Your employer is responsible for deducting your pension contribution from your salary and pay in the pension contribution.</value>
+	</data>
+	<data name="Rules_header2" xml:space="preserve">
+    	<value>Calculation of your seagoing service</value>
+	</data>
+	<data name="Rules_desc2" xml:space="preserve">
+    	<value>To qualify for a seaman’s pension, you must usually have a minimum of 150 months of seagoing service. If you have accrued between 12 and 149 months of seagoing service, you may be able to add certain types of external seagoing service to reach the minimum requirement:&#x0a;&#x0a; • Seagoing service from the Norwegian Guarantee Fund for Fishermen&#x0a; • Service under another public service pension scheme (e.g. the Norwegian Public Service Pension Fund) applicable to accrual of service on maritime vessels&#x0a; • National service completed before 1981 if your service commenced within six months of the expiry of pensionable service or maritime training&#x0a; • Service on other EU/EEA-country vessels according to the provisions of the Agreement on the European Economic Area&#x0a;&#x0a;Your external seagoing service is not included in the basis for calculation of the size of your pension.</value>
+	</data>
+	<data name="Rules_header3" xml:space="preserve">
+    	<value>Calculation of your seaman’s pension</value>
+	</data>
+	<data name="Rules_desc3" xml:space="preserve">
+    	<value>Your annual pension payment is calculated by multiplying the number of months of your seagoing service with the pension rates applicable on the date that payment of your pension commences. Different pension rates apply for service accrued as primary or secondary service. Your pension will be calculated on the basis of a maximum of 360 months of seagoing service.</value>
+	</data>
+
+	<!-- Help Page -->
+	<data name="Help_FAQ_title" xml:space="preserve">
+    	<value>Find answers in our FAQ:</value>
+	</data>
+	<data name="Help_email" xml:space="preserve">
+    	<value>Feel free to send us an e-mail:</value>
+	</data>
+	<data name="Help_callus" xml:space="preserve">
+    	<value>Call us: </value>
+	</data>
+	<data name="Help_calltimes_winter" xml:space="preserve">
+    	<value>The main switchboard is open from 8:00 am to 3.45 pm</value>
+	</data>
+	<data name="Help_calltimes_summer" xml:space="preserve">
+    	<value>The main switchboard is open from 8:00 am to 3.00 pm</value>
+	</data>
+	<data name="Help_chat" xml:space="preserve">
+    	<value>Or chat with us here!</value>
+	</data>
+
+	<!-- FAQ Page -->
+	<data name="FAQ_title" xml:space="preserve">
+    	<value>FAQ</value>
+	</data>
+	<data name="FAQ_link" xml:space="preserve">
+    	<value>https://www.pts.no/en/medlem/sporsmal-og-svar/</value>
+	</data>
+	<data name="FAQ_link_local" xml:space="preserve">
+    	<value>PTSPensjon.Server.faq_english.html</value>
+	</data>
+
+	<!-- Settings Page -->
+	<data name="Settings_language_title" xml:space="preserve">
+    	<value>Language</value>
+	</data>
+	<data name="Settings_language_norwegian" xml:space="preserve">
+    	<value>Norsk</value>
+	</data>
+	<data name="Settings_language_english" xml:space="preserve">
+    	<value>English</value>
+	</data>
+
+	<data name="Settings_fontsize_title" xml:space="preserve">
+    	<value>Text size</value>
+	</data>
+	<data name="Settings_fontsize_small" xml:space="preserve">
+    	<value>Small</value>
+	</data>
+	<data name="Settings_fontsize_medium" xml:space="preserve">
+    	<value>Medium</value>
+	</data>
+	<data name="Settings_fontsize_large" xml:space="preserve">
+    	<value>Large</value>
+	</data>
+	
+	<data name="Settings_sound_title" xml:space="preserve">
+    	<value>Audio</value>
+	</data>
+	<data name="Settings_sound_desc" xml:space="preserve">
+    	<value>Turn audio on/off</value>
+	</data>
+
+	<data name="Settings_watchintro" xml:space="preserve">
+    	<value>Replay intro</value>
+	</data>
+
+	<data name="Settings_about_title" xml:space="preserve">
+    	<value>About the app</value>
+	</data>
+	<data name="Settings_about_desc" xml:space="preserve">
+    	<value>Ditt PTS is developed by Megapop AS for Pensjonstrygden for sjømenn&#x0a;&#x0a;</value>
+	</data>
+
+	<data name="Settings_push_notifications_title" xml:space="preserve">
+    	<value>Notifications</value>
+	</data>
+	<data name="Settings_push_notifications_enabled" xml:space="preserve">
+    	<value>Enabled</value>
+	</data>
+	<data name="Settings_push_notifications_expired" xml:space="preserve">
+    	<value>Expired</value>
+	</data>
+
+	<data name="Settings_push_notifications_disabled_title" xml:space="preserve">
+    	<value>Disabled</value>
+	</data>
+	<data name="Settings_push_notifications_disabled_desc" xml:space="preserve">
+      	<value>Activate notifications</value>
+	</data>
+	<data name="Settings_push_notifications_expired_desc" xml:space="preserve">
+    	<value>Reactivate notifications</value>
+	</data>
+
+	<!-- About PTS Page -->
+	<data name="About_header1" xml:space="preserve">
+    	<value>Who are we</value>
+	</data>
+	<data name="About_desc1" xml:space="preserve">
+    	<value>Pension Insurance for Seamen (PTS) is a statutory pension scheme for employees working at sea. Our main task is to pay pensions to seafarers when they are aged between 60 and 67 and to receive contributions to premiums from both employees and employers.</value>
+	</data>
+	<data name="About_header2" xml:space="preserve">
+    	<value>How is PTS managed</value>
+	</data>
+	<data name="About_desc2" xml:space="preserve">
+    	<value>The scheme is managed by PTS which is a public body under the Norwegian Ministry of Labour and Social Affairs. PTS is managed by a board of five members of which four are appointed by employee and employer organisations while the Ministry of Labour and Social Affairs appoints its chairman. We have 25 employees across five departments who all report directly to the director.</value>
+	</data>
+
+	<data name="About_postbox" xml:space="preserve">
+    	<value>Pb. </value>
+	</data>
+	<data name="About_telephone" xml:space="preserve">
+    	<value>phone: </value>
+	</data>
+	<data name="About_email" xml:space="preserve">
+    	<value>e-mail: </value>
+	</data>	
+
+	<!-- Push Notifications Popup -->
+	<data name="Push_notification_title" xml:space="preserve">
+    	<value>Notifications</value>
+	</data>
+	<data name="Push_notification_desc" xml:space="preserve">
+    	<value>For an improved user experience, you can receive information about your seasgoing service and messages.</value>
+	</data>
+	<data name="Push_notification_accept" xml:space="preserve">
+    	<value>Accept</value>
+	</data>
+	<data name="Push_notification_cancel" xml:space="preserve">
+    	<value>Don't allow</value>
+	</data>
+
+	<data name="Push_notification_local_title" xml:space="preserve">
+    	<value>Push notifications disabled</value>
+	</data>
+	<data name="Push_notification_local_desc" xml:space="preserve">
+    	<value>To get a better user experience, you can activate notifications. You will then receive notifications when your months of seagoing service are updated, when you receive your pension slip, when we send you a message and when we post news.</value>
+	</data>
+
+	<!-- Static resources -->
+	<data name="Static_email" xml:space="preserve">
+    	<value>post@pts.no</value>
+	</data>
+	<data name="Static_email_draft_title" xml:space="preserve">
+    	<value>[Ditt PTS] feedback</value>
+	</data>
+	<data name="Static_email_draft_body" xml:space="preserve">
+    	<value></value>
+	</data>
+	
+	<data name="Static_phone_number" xml:space="preserve">
+    	<value>22 35 89 00</value>
+	</data>
+	<data name="Static_call_title" xml:space="preserve">
+    	<value>Call PTS</value>
+	</data>
+	<data name="Static_call_desc" xml:space="preserve">
+    	<value>Do you wish to call PTS on 22 35 89 00?</value>
+	</data>
+	<data name="Static_call_yes_action" xml:space="preserve">
+    	<value>Call now</value>
+	</data>
+	<data name="Static_call_no_action" xml:space="preserve">
+    	<value>Cancel</value>
+	</data>
+
+	<data name="Static_address" xml:space="preserve">
+    	<value>8143 Dep, N-0033 Oslo</value>
+	</data>
+
+	<!-- Error handling -->
+	<data name="Generic_internet_error_title" xml:space="preserve">
+    	<value>No internet access</value>
+	</data>
+	<data name="Generic_internet_error_desc" xml:space="preserve">
+    	<value>This feature requires internet access</value>
+	</data>
+	<data name="Generic_internet_error_ok" xml:space="preserve">
+    	<value>OK</value>
+	</data>
+	
+</root>

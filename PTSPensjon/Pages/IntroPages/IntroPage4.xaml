@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage x:Class="PTSPensjon.IntroPage4" 
+			 xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:controls="clr-namespace:PTSPensjon;assembly=PTSPensjon"
+			 xmlns:i18n="clr-namespace:PTSPensjon;assembly=PTSPensjon" 
+			 xmlns:color="clr-namespace:PTSPensjon"
+			 xmlns:GridLength="clr-namespace:PTSPensjon">
+
+	<Grid RowSpacing="0">
+
+		<Grid.RowDefinitions>
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_001}" />
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_002}" />
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_003}" />
+            <RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_004}" />
+            <RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_005}" />
+        </Grid.RowDefinitions>
+
+		<Grid Grid.RowSpan="5">
+		      <Image Source="BkgPicture_04" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+		</Grid>
+		
+        <Grid Grid.Row="0" VerticalOptions="Start">
+        		<Image x:Name="header" Source="header.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="30" />
+		</Grid>
+
+		<Grid Grid.Row="1">
+			<StackLayout>
+				<Image Source="WelcomeGradient4.png" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="60" />
+			</StackLayout>
+		</Grid>
+
+		<Grid Grid.Row="2" VerticalOptions="Center">
+        	<Image Source="WelcomeTextBG.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Center" />
+			<Label x:Name="TextLabel" Text="{i18n:Translate IntroPage_4_desc}" XAlign="Center" FontSize="18" FontAttributes="Bold" 
+			TextColor="{x:Static color:PTSPalette._003}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="240" />
+		</Grid>
+
+        <Grid Grid.Row="4" ColumnSpacing="0" HorizontalOptions="Center" VerticalOptions="Start">
+            <controls:IntroPaginator x:Name="paginator" Index="3" />
+		</Grid>
+
+		<RelativeLayout Grid.Row="4" VerticalOptions="Center" HorizontalOptions="Center">
+			<Label Text="{i18n:Translate IntroPages_skip_intro}" TextColor="{x:Static color:PTSPalette._002}" x:Name="SkipIntroText" />
+		</RelativeLayout>
+	</Grid>
+</ContentPage>

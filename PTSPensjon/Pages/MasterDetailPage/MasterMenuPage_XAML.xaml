@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="PTSPensjon.MasterMenuPage_XAML"
+			 xmlns:color="clr-namespace:PTSPensjon"
+			 xmlns:i18n="clr-namespace:PTSPensjon;assembly=PTSPensjon"
+			 Icon="contact.png"
+			 Title = "Meny"
+			 BackgroundColor = "{x:Static color:PTSPalette._008}" >
+
+	<StackLayout x:Name="layout" Orientation="Vertical">
+
+		<StackLayout x:Name="header" BackgroundColor="{x:Static color:PTSPalette._001}" HeightRequest="120">
+			<Image Source="logo.png" HeightRequest="40" HorizontalOptions="Start" Margin="10,42,0,0" />
+			<Image.GestureRecognizers>
+      			<TapGestureRecognizer Tapped="TapBackToMainMenu"  />
+  			</Image.GestureRecognizers>
+		</StackLayout>
+
+		<ScrollView>
+			<StackLayout Orientation="Vertical" x:Name="mainStackLayout">
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="messages">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconMessages.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_Messages}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="seatime">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconSeaTime.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_Seatime}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="apply">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconApplyPension.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_ApplyPension}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="2" />
+
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="news">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconNews.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_News}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="calc">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconCalculator.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_Calculator}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="rules">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconRules.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_Rules}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="2" />
+
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="help">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconHelp.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_Help}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="settings">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconSettings.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_Settings}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				<StackLayout Orientation="Horizontal" HeightRequest="35" Padding="30,0,0,0">
+					<RelativeLayout WidthRequest="50" x:Name="about">
+						<Image Source="Knapp.png" Margin="2" />
+						<Image Source="IconAbout.png" Margin="10" />
+						<Label Text="{i18n:Translate HomeMenuItem_About}" TextColor="{x:Static color:PTSPalette._002}" FontAttributes="Bold" Margin="55,7,0,0" />
+					</RelativeLayout>
+				</StackLayout>
+				
+			</StackLayout>
+		</ScrollView>
+	</StackLayout>
+</ContentPage>

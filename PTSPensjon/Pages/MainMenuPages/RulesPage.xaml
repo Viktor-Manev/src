@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 xmlns:f9p="clr-namespace:Forms9Patch;assembly=Forms9Patch"
+			 xmlns:i18n="clr-namespace:PTSPensjon;assembly=PTSPensjon"
+			 xmlns:GridLength="clr-namespace:PTSPensjon"
+			 x:Class="PTSPensjon.RulesPage"
+			 xmlns:color="clr-namespace:PTSPensjon"
+			 xmlns:double="clr-namespace:PTSPensjon.Statics">
+
+		<!--  main page grid  -->
+	    <Grid RowSpacing="0">
+	        <Grid.RowDefinitions>
+	            <RowDefinition Height="{x:Static GridLength:PTSStyles._MainMenuRow_001}" />
+				<RowDefinition Height="{x:Static GridLength:PTSStyles._MainMenuRow_002}" />
+	        </Grid.RowDefinitions>
+
+	        <!--  row background colors  -->
+	        <BoxView Grid.Row="0" Color="{x:Static color:PTSPalette._001}" />
+        	<BoxView Grid.Row="1" Color="{x:Static color:PTSPalette._002}" />
+
+	        <!--  title  -->
+			<Grid Grid.Row="0">
+				<Image x:Name="header" Source="header.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="30" />
+				<StackLayout Padding="16" HorizontalOptions="Center" VerticalOptions="End" >
+					<Image Source="logo.png" HeightRequest="23" />
+	        	</StackLayout>
+				<StackLayout Padding="16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Start">
+					<Image Source="BackButton.png" HeightRequest="20" />
+					<Image.GestureRecognizers>
+	      				<TapGestureRecognizer Tapped="NavigateBack"  />
+	  				</Image.GestureRecognizers>
+				</StackLayout>
+
+				<StackLayout Padding="0,0,20,16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+					<Image Source="MasterMenuIcon.png" HeightRequest="20" />
+					<Image.GestureRecognizers>
+      					<TapGestureRecognizer Tapped="MasterMenuTap"  />
+  					</Image.GestureRecognizers>
+				</StackLayout>
+			</Grid>
+
+	       <ScrollView Grid.Row="1" Orientation="Vertical" >
+        	<StackLayout>
+            	<Label Text="{i18n:Translate Rules_title}" FontSize="{x:Static double:FontSizes.TitleSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._005}" Margin="20,10" />
+				<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="2" />
+
+				<StackLayout Orientation="Vertical">
+				<f9p:Label x:Name="rulesDesc" HtmlText="{i18n:Translate Rules_desc}" FontSize="{x:Static double:FontSizes.LabelSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" Margin="22,2" />
+				</StackLayout>
+					<StackLayout Orientation="Vertical" Padding="20,10">
+						<Label Text="{i18n:Translate Rules_header1}" FontSize="16" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+						<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+						<Label Text="{i18n:Translate Rules_desc1}" 
+					   		   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" Margin="2,2" />
+					</StackLayout>
+
+					<StackLayout Orientation="Vertical" Padding="20,10">
+						<Label Text="{i18n:Translate Rules_header2}" FontSize="16" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+						<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+						<Label Text="{i18n:Translate Rules_desc2}" 
+					   		   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" Margin="2,2" />
+					</StackLayout>
+
+					<StackLayout Orientation="Vertical" Padding="20,10">
+						<Label Text="{i18n:Translate Rules_header3}" FontSize="16" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+						<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+						<f9p:Label x:Name="rulesDesc3" HtmlText="{i18n:Translate Rules_desc3}" 
+					   		   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" Margin="2,2" />
+					</StackLayout>
+							
+			</StackLayout>
+  		  </ScrollView>
+		
+			<!--<Grid Grid.Row="1" x:Name="mainGrid" >
+				<ScrollView>
+	            	<f9p:Label x:Name="textLabel" />
+				</ScrollView>
+			</Grid>-->
+	    </Grid>
+</ContentPage>

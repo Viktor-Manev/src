@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage x:Class="PTSPensjon.IntroPage5" 
+			 xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:controls="clr-namespace:PTSPensjon;assembly=PTSPensjon"
+			 xmlns:i18n="clr-namespace:PTSPensjon;assembly=PTSPensjon" 
+			 xmlns:color="clr-namespace:PTSPensjon"
+			 xmlns:GridLength="clr-namespace:PTSPensjon"
+			 xmlns:roxv="clr-namespace:Rox;assembly=Rox.Xamarin.Video.Portable">
+
+	<Grid RowSpacing="0">
+
+		<Grid.RowDefinitions>
+            <RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_001}" />
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_002}" />
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_003}" />
+			<RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_003}" />
+            <RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_004}" />
+            <RowDefinition Height="{x:Static GridLength:PTSStyles._IntroRow_005}" />
+        </Grid.RowDefinitions>
+
+		<Grid.ColumnDefinitions>
+            <ColumnDefinition Width="60" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="60" />
+        </Grid.ColumnDefinitions>
+
+        <!--<BoxView Grid.Row="0" Color="Purple" />
+        <BoxView Grid.Row="1" Color="Green" />
+        <BoxView Grid.Row="2" Color="Blue" />
+		<BoxView Grid.Row="3" Color="Yellow" />
+		<BoxView Grid.Row="4" Color="Red" />
+		<BoxView Grid.Row="5" Color="Teal" />-->
+		
+		<Grid Grid.RowSpan="6" Grid.ColumnSpan="4">
+		      <Image Source="BkgPicture_05" Aspect="Fill" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" />
+		</Grid>
+		
+        <Grid Grid.Row="0" Grid.ColumnSpan="4" VerticalOptions="Start">
+        		<Image x:Name="header" Source="header.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="30" />
+		</Grid>
+
+		<Grid Grid.Row="2" Grid.RowSpan="2" Grid.ColumnSpan="4" VerticalOptions="Center">
+        	<Image Source="WelcomeTextBG.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" />
+			<Label x:Name="TextLabel" Text="{i18n:Translate IntroPage_5_desc}" XAlign="Center" FontSize="18" FontAttributes="Bold" 
+				   TextColor="{x:Static color:PTSPalette._003}" HorizontalOptions="Center" VerticalOptions="Center" WidthRequest="240" />
+		</Grid>
+
+		<Grid Grid.RowSpan="6" Grid.ColumnSpan="4" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        		<Image x:Name="bg_overlay" BackgroundColor="Black" Opacity="0.0" InputTransparent="true" />
+		</Grid>
+		
+		<Grid x:Name="videoViewGrid" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2">
+			<roxv:VideoView x:Name="VideoView" VerticalOptions="Center"
+							HeightRequest="162"
+							AutoPlay="false" LoopPlay="false" Muted="false" ShowController="{Binding ShowController}" Volume="1.0" IsVisible="false"
+							Source="{Binding EntrySource}" FullScreen="true" PropertyChangedCommand="{Binding PropertyChangedCommand}" />
+
+			<Image x:Name="videoButton" Source="WelcomeVideoThumb.png" 
+				   HeightRequest="162" VerticalOptions="Center" />
+			<Image.GestureRecognizers>
+      			<TapGestureRecognizer Tapped="PlayIntroVideo"  />
+  			</Image.GestureRecognizers>
+		</Grid>
+
+        <Grid Grid.Row="5" ColumnSpacing="0" Grid.ColumnSpan="4" HorizontalOptions="Center" VerticalOptions="Start">
+            <controls:IntroPaginator x:Name="paginator" Index="4" />
+		</Grid>
+
+		<RelativeLayout Grid.Row="4" Grid.ColumnSpan="4" VerticalOptions="Center" HorizontalOptions="End">
+			<Image AutomationId="_nextbutton" Source="Intro_NextButton.png" x:Name="NextButton" />
+		</RelativeLayout>
+
+		<RelativeLayout Grid.Row="5" Grid.ColumnSpan="4" VerticalOptions="Center" HorizontalOptions="Center">
+			<Label Text="{i18n:Translate IntroPages_skip_intro}" TextColor="{x:Static color:PTSPalette._002}" x:Name="SkipIntroText" />
+		</RelativeLayout>
+
+	</Grid>
+
+
+				
+</ContentPage>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="PTSPensjon.SettingsPage" 
+			 xmlns:i18n="clr-namespace:PTSPensjon;assembly=PTSPensjon"
+			 xmlns:GridLength="clr-namespace:PTSPensjon"
+			 xmlns:color="clr-namespace:PTSPensjon"
+			 xmlns:double="clr-namespace:PTSPensjon.Statics">
+	
+	<ContentPage.Content>
+		<Grid RowSpacing="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="{x:Static GridLength:PTSStyles._MainMenuRow_001}" />
+				<RowDefinition Height="{x:Static GridLength:PTSStyles._MainMenuRow_002}" />
+	        </Grid.RowDefinitions>
+
+			<BoxView Grid.Row="0" Color="{x:Static color:PTSPalette._001}" />
+	        <BoxView Grid.Row="1" Color="{x:Static color:PTSPalette._002}" />
+
+	        <Grid Grid.Row="0">
+				<StackLayout>
+					<Image x:Name="header" Source="header.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="30"  />
+				</StackLayout>
+
+				<StackLayout Padding="16" HorizontalOptions="Center" VerticalOptions="End" >
+						<Image Source="logo.png" HeightRequest="23" />
+	        	</StackLayout>
+				<StackLayout Padding="16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Start">
+						<Image Source="BackButton.png" HeightRequest="20" />
+						<Image.GestureRecognizers>
+	      					<TapGestureRecognizer Tapped="NavigateBack"  />
+	  					</Image.GestureRecognizers>
+				</StackLayout>
+
+				<StackLayout Padding="0,0,20,16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+					<Image Source="MasterMenuIcon.png" HeightRequest="20" />
+					<Image.GestureRecognizers>
+	      				<TapGestureRecognizer Tapped="MasterMenuTap"  />
+	  				</Image.GestureRecognizers>
+				</StackLayout>
+			</Grid>
+	
+			<ScrollView Grid.Row="1" Padding="20">
+	        	<StackLayout >
+	            	<Label Text="{i18n:Translate HomeMenuItem_Settings}" FontSize="{x:Static double:FontSizes.TitleSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._005}" />
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="2" />
+
+					<Label Text="{i18n:Translate Settings_language_title}" FontSize="{x:Static double:FontSizes.DescSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+					<StackLayout Orientation="Horizontal" Padding="10,10">
+						<StackLayout Padding="10,0" x:Name="language_bokmal">
+							<Image Source="Flags_NO" HeightRequest="30" />
+							<Label Text="{i18n:Translate Settings_language_norwegian}" 
+						   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}"  />
+						</StackLayout>
+						<StackLayout Padding="10,0" x:Name="language_english">
+							<Image Source="Flags_US_UK" HeightRequest="30" />
+							<Label Text="{i18n:Translate Settings_language_english}" 
+						   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}"  />
+						</StackLayout>
+					</StackLayout>
+
+					<Label Text="{i18n:Translate Settings_fontsize_title}" FontSize="{x:Static double:FontSizes.DescSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+					<StackLayout Orientation="Horizontal" Padding="10,10">
+						<StackLayout Padding="10,0" x:Name="fontsize_small">
+							<Image Source="AIcon" HeightRequest="25" />
+							<Label Text="{i18n:Translate Settings_fontsize_small}" 
+						   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}"  />
+						</StackLayout>
+						<StackLayout Padding="10,0" x:Name="fontsize_medium">
+							<Image Source="AIcon" HeightRequest="30" />
+							<Label Text="{i18n:Translate Settings_fontsize_medium}" 
+						   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}"  />
+						</StackLayout>
+						<StackLayout Padding="10,0" x:Name="fontsize_large">
+							<Image Source="AIcon" HeightRequest="35" />
+							<Label Text="{i18n:Translate Settings_fontsize_large}" 
+						   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}"  />
+						</StackLayout>
+					</StackLayout>
+				
+					<Label Text="{i18n:Translate Settings_sound_title}" FontSize="{x:Static double:FontSizes.DescSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+
+					<StackLayout Orientation="Horizontal" Padding="20,10">
+						<Image x:Name="audioButton" Source="SoundOff" WidthRequest="35" />
+					</StackLayout>
+
+					
+					<Label x:Name="pushTitleText" Text="{i18n:Translate Settings_push_notifications_title}" FontSize="{x:Static double:FontSizes.DescSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+					<Image x:Name="pushTitleLine" BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+
+					<StackLayout x:Name="pushStackLayout" Orientation="Horizontal" Padding="10,10">
+							<Image x:Name="pushStatusIcon" Source="Push_disabled" HeightRequest="16" />
+							<Label x:Name="pushStatusDesc" Text="{i18n:Translate Settings_push_notifications_disabled_title}" 
+						   FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}"  />
+					</StackLayout>
+					
+					<AbsoluteLayout x:Name="pushAbsoluteLayout" HeightRequest="50" MinimumWidthRequest="500" WidthRequest="500" Padding="20,10" >
+						<Image x:Name="enablePushNotificationsButton" Source="ButtonPushSettings" />
+						<Label x:Name="enablePushNotificationsText" Text="{i18n:Translate Settings_push_notifications_disabled_desc}" FontSize="14" FontAttributes="Bold" TextColor="White"
+								Margin="20,10"/>
+					</AbsoluteLayout>
+
+				
+					<Label Text="{i18n:Translate Settings_watchintro}" FontSize="{x:Static double:FontSizes.DescSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+
+
+					<AbsoluteLayout x:Name="watchIntroAbsoluteLayout" HeightRequest="30" MinimumWidthRequest="500" WidthRequest="500" Padding="20,10" >
+						<Image x:Name="watchIntroButton" Source="ButtonPushSettings" />
+						<Label Text="{i18n:Translate Settings_watchintro}" FontSize="14" FontAttributes="Bold" TextColor="White"
+								HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center" Margin="5,2"/>
+					</AbsoluteLayout>
+					<!--<Button BackgroundColor="Aqua" Text="{i18n:Translate Settings_watchintro}" FontSize="14" FontAttributes="Bold" TextColor="White" />-->
+					
+					<Label Text="{i18n:Translate Settings_about_title}" FontSize="{x:Static double:FontSizes.DescSize}" FontAttributes="Bold" TextColor="{x:Static color:PTSPalette._001}" WidthRequest="310" />
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+					<Label x:Name="developedByLabel" FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" />
+
+					<Image BackgroundColor="{x:Static color:PTSPalette._004}" HeightRequest="1" WidthRequest="50" />
+					<Label x:Name="versionNumber" FontSize="{x:Static double:FontSizes.LabelSize}" TextColor="{x:Static color:PTSPalette._001}" />
+
+					
+				</StackLayout>
+			</ScrollView>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

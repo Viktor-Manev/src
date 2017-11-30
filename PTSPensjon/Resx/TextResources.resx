@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+
+	<data name="IntroPage_1_desc" xml:space="preserve">
+    	<value>Vi hjelper deg med pensjonen din</value>
+	</data>
+	<data name="IntroPage_2_desc" xml:space="preserve">
+    	<value>I denne appen kan du lære alt om vår ordning, søke pensjon, eller beregne forventet pensjon</value>
+	</data>
+	<data name="IntroPage_3_desc" xml:space="preserve">
+    	<value>Du vil også kunne lese nyheter og meldinger fra oss, eller kontakte kundesenter</value>
+	</data>
+	<data name="IntroPage_4_desc" xml:space="preserve">
+    	<value>Vi er her for å hjelpe deg med alle spørsmål du måtte ha. Tilfredse kunder og medlemmer er vårt mål!</value>
+	</data>
+	<data name="IntroPage_5_desc" xml:space="preserve">
+    	<value>Vi har laget en kort film om du vil lære mer om hvordan appen fungerer</value>
+	</data>
+
+	<data name="IntroPage_5_video_path" xml:space="preserve">
+    	<value>Pensjonstrygden_vid_8.mp4</value>
+	</data>
+
+	<data name="IntroPages_skip_intro" xml:space="preserve">
+    	<value>Hopp over</value>
+	</data>
+
+	<!-- Main Switchboard XAML -->
+	<data name="HomeMenuItem_Messages" xml:space="preserve">
+    	<value>Meldinger</value>
+	</data>
+	<data name="HomeMenuItem_Seatime" xml:space="preserve">
+    	<value>Fartstid</value>
+	</data>
+	<data name="HomeMenuItem_ApplyPension" xml:space="preserve">
+    	<value>Søk pensjon</value>
+	</data>
+
+	<data name="HomeMenuItem_News" xml:space="preserve">
+    	<value>Nyheter</value>
+	</data>
+	<data name="HomeMenuItem_Calculator" xml:space="preserve">
+    	<value>Kalkulator</value>
+	</data>
+	<data name="HomeMenuItem_Rules" xml:space="preserve">
+    	<value>Regelverk</value>
+	</data>
+	
+	<data name="HomeMenuItem_Help" xml:space="preserve">
+    	<value>Hjelp</value>
+	</data>
+	<data name="HomeMenuItem_Settings" xml:space="preserve">
+    	<value>Innstillinger</value>
+	</data>
+	<data name="HomeMenuItem_About" xml:space="preserve">
+    	<value>Om PTS</value>
+	</data>
+
+	<!-- Master Detail Page -->
+
+	<!-- News Page -->
+	
+	<!-- Retirement calculator Page -->
+	<data name="Calculator_header" xml:space="preserve">
+    	<value>Simulering av Pensjon</value>
+	</data>
+	<data name="Calculator_desc" xml:space="preserve">
+    	<value>Her kan du foreta en forenklet simulering av din fremtidige pensjon.&#x0a;&#x0a;Om du ønsker en mer utfyllende simulering av dine rettigheter kan dette foretas i din &lt;a href="https://medlem.pts.no/Pensjonskalkulator/Info/" &gt;medlemsportal&lt;/a&gt;.&#x0a;</value>
+	</data>
+	<data name="Calculator_field1" xml:space="preserve">
+    	<value>Ditt fødselsår</value>
+	</data>
+	<data name="Calculator_field2" xml:space="preserve">
+    	<value>Antall fartsmåneder&#x0a;som overordnet</value>
+	</data>
+	<data name="Calculator_field3" xml:space="preserve">
+    	<value>Antall fartsmåneder som underordnet etter 30.4.93</value>
+	</data>
+	<data name="Calculator_field4" xml:space="preserve">
+    	<value>Antall fartsmåneder som underordnet før 01.05.93</value>
+	</data>
+	<data name="Calculator_field5" xml:space="preserve">
+    	<value>Antall forsørgede&#x0a;barn under 18 år</value>
+	</data>
+	<data name="Calculator_calculate_button" xml:space="preserve">
+        <value>Beregn pensjon</value>
+    </data>
+	
+	<!-- Error handling -->
+	<data name="Calculator_error_title" xml:space="preserve">
+    	<value>Advarsel</value>
+	</data>
+	<data name="Calculator_error_desc" xml:space="preserve">
+    	<value>Feil i skjema</value>
+	</data>
+	<data name="Calculator_error_close" xml:space="preserve">
+    	<value>OK</value>
+	</data>
+
+	<!-- Retirement Result Page -->
+	<data name="CalcResult_title" xml:space="preserve">
+    	<value>Resultat</value>
+	</data>
+	<data name="CalcResult_header" xml:space="preserve">
+    	<value>Simulering av Pensjon</value>
+	</data>
+	<data name="CalcResult_field1" xml:space="preserve">
+    	<value>Alderspensjon med inntektsprøvd tillegg på {0}%</value>
+	</data>
+	<data name="CalcResult_field2" xml:space="preserve">
+    	<value>Alderspensjon uten inntektsprøvd tillegg</value>
+	</data>
+	<data name="CalcResult_field3" xml:space="preserve">
+    	<value>Tilbakebetaling av pensjonsavgift</value>
+	</data>
+
+	<!-- Rules Page -->
+	<data name="Rules_title" xml:space="preserve">
+    	<value>Regelverk</value>
+	</data>
+
+	<data name="Rules_desc" xml:space="preserve">
+		<value>﻿Har du arbeidet på norske skip eller flyttbare rigger vil du kunne ha rett til en tidlig alderspensjon for sjømenn i perioden mellom 60 og 67 år.*n2*For å få rett til pensjon må du ha minst 150 fartsmåneder til sjøs. Fartstid fra tjeneste på skip i andre EØS-land, fiskebåter og statlige skip regnes også med for å fylle kravet om nok fartstid.*n2*Du har rett til pensjon fra du fyller 60 år hvis du har opptjent minst 120 fartsmåneder etter at du fylte 40 år og har sluttet å jobbe til sjøs. For nærmere informasjon se &lt;a href="http://www.pts.no/pensjon/" &gt;Pensjon&lt;/a&gt;. Dersom du ikke når opp til kravet om 150 fartsmåneder kan du ha krav på tilbakebetaling av pensjonsavgift. Dette er en engangsutbetaling.</value>
+	</data>
+
+	<data name="Rules_header1" xml:space="preserve">
+    	<value>Innbetaling av premie</value>
+	</data>
+	<data name="Rules_desc1" xml:space="preserve">
+    	<value>Både du og din arbeidsgiver betaler inn pensjonspremie/avgift. Begge deler er bidrag til din pensjon. Størrelsen på din pensjonspremie/avgift avhenger av hvilken stilling/lønnsnivå du har og hvor mange dager du arbeider per måned. Avgiftssatsene blir endret hvert år som følge av reguleringen av grunnbeløpet i folketrygden.&#x0a;&#x0a;Din arbeidsgiver betaler en avgift som tilsvarer 3,3 prosent av din månedlige bruttoinntekt. Din arbeidsgiver er ansvarlig for å trekke pensjonsavgift fra din lønn og å betale inn samlet pensjonsavgift.</value>
+	</data>
+	<data name="Rules_header2" xml:space="preserve">
+    	<value>Beregning av din fartstid</value>
+	</data>
+	<data name="Rules_desc2" xml:space="preserve">
+    	<value>Du må normalt ha minst 150 fartsmåneder for å få rett til sjømannspensjon. Hvis du har mellom 12 og 149 fartsmåneder kan du bruke visse typer ekstern fartstid for å nå opp til minstekravet:&#x0a;&#x0a; • Premieuker i pensjonstrygden for fiskere.&#x0a; • Tjenestetid i annen offentlig tjenestepensjonsordning (f.eks. Statens Pensjonskasse) som gjelder opptjening på skip&#x0a; • Vernepliktstjeneste avsluttet før 1981 dersom avtjeningen tok til innen 6 måneder etter utløpet av pensjonsgivende tjeneste eller maritim skolegang&#x0a; • Tjeneste på øvrige EU/EØS-lands skip etter EØS-avtalens bestemmelser&#x0a;&#x0a;Din eksterne fartstid teller imidlertid ikke med når det gjelder beregning av pensjonens størrelse.</value>
+	</data>
+	<data name="Rules_header3" xml:space="preserve">
+    	<value>Beregning av sjømannspensjon</value>
+	</data>
+	<data name="Rules_desc3" xml:space="preserve">
+    	<value>Din årlige pensjonsutbetaling beregnes ved å gange antall fartsmåneder med de pensjonssatser som gjelder på det tidspunktet du tar ut pensjon.  Det er ulike pensjonssatser for fartstid opptjent som overordnet eller underordnet.  Det beregnes pensjon for maks 360 fartsmåneder.*n2*&lt;a href="https://lovdata.no/dokument/NL/lov/1948-12-03-7/" &gt;Les hele loven vår på lovdata.no&lt;/a&gt;</value>
+	</data>
+	
+	<!-- Help Page -->
+	<data name="Help_FAQ_title" xml:space="preserve">
+    	<value>Ofte stilte spørsmål og svar:</value>
+	</data>
+	<data name="Help_email" xml:space="preserve">
+    	<value>Send oss gjerne en e-post:</value>
+	</data>
+	<data name="Help_callus" xml:space="preserve">
+    	<value>Ring oss på </value>
+	</data>
+	<data name="Help_calltimes_winter" xml:space="preserve">
+    	<value>Kundesenteret er åpent fra kl. 08:00 - 15:45</value>
+	</data>
+	<data name="Help_calltimes_summer" xml:space="preserve">
+    	<value>Kundesenteret er åpent fra kl. 08:00 - 15:00</value>
+	</data>
+	<data name="Help_chat" xml:space="preserve">
+    	<value>Eller chat med oss her!</value>
+	</data>
+
+	<!-- FAQ Page -->
+	<data name="FAQ_title" xml:space="preserve">
+    	<value>Ofte stilte spørsmål og svar</value>
+	</data>
+	<data name="FAQ_link" xml:space="preserve">
+    	<value>https://www.pts.no/medlem/sporsmal-og-svar/</value>
+	</data>
+	<data name="FAQ_link_local" xml:space="preserve">
+    	<value>PTSPensjon.Server.faq_norwegian.html</value>
+	</data>
+
+	<!-- Settings Page -->
+	<data name="Settings_language_title" xml:space="preserve">
+    	<value>Språk</value>
+	</data>
+	<data name="Settings_language_norwegian" xml:space="preserve">
+    	<value>Norsk</value>
+	</data>
+	<data name="Settings_language_english" xml:space="preserve">
+    	<value>English</value>
+	</data>
+
+	<data name="Settings_fontsize_title" xml:space="preserve">
+    	<value>Tekststørrelse</value>
+	</data>
+	<data name="Settings_fontsize_small" xml:space="preserve">
+    	<value>Liten</value>
+	</data>
+	<data name="Settings_fontsize_medium" xml:space="preserve">
+    	<value>Medium</value>
+	</data>
+	<data name="Settings_fontsize_large" xml:space="preserve">
+    	<value>Stor</value>
+	</data>
+
+	<data name="Settings_sound_title" xml:space="preserve">
+    	<value>Lyd</value>
+	</data>
+	<data name="Settings_sound_desc" xml:space="preserve">
+    	<value>Skru lyd av/på</value>
+	</data>
+
+	<data name="Settings_watchintro" xml:space="preserve">
+    	<value>Se intro på nytt</value>
+	</data>
+
+	<data name="Settings_about_title" xml:space="preserve">
+    	<value>Om Appen</value>
+	</data>
+	<data name="Settings_about_desc" xml:space="preserve">
+    	<value>PTS Pensjon er utviklet av Megapop AS på oppdrag av Pensjonstrygden for sjømenn&#x0a;&#x0a;</value>
+	</data>
+
+	<data name="Settings_push_notifications_title" xml:space="preserve">
+    	<value>Varsler</value>
+	</data>
+	<data name="Settings_push_notifications_enabled" xml:space="preserve">
+    	<value>Skrudd på</value>
+	</data>
+	<data name="Settings_push_notifications_expired" xml:space="preserve">
+    	<value>Utgått</value>
+	</data>
+	
+	<data name="Settings_push_notifications_disabled_title" xml:space="preserve">
+    	<value>Ikke aktivert</value>
+	</data>
+	<data name="Settings_push_notifications_disabled_desc" xml:space="preserve">
+    	<value>Aktiver varsler</value>
+	</data>
+	<data name="Settings_push_notifications_expired_desc" xml:space="preserve">
+    	<value>Reaktiver varsler</value>
+	</data>
+
+	<!-- About PTS Page -->
+	<data name="About_header1" xml:space="preserve">
+    	<value>Hva gjør vi</value>
+	</data>
+	<data name="About_desc1" xml:space="preserve">
+    	<value>Pensjonstrygden for sjømenn (PTS) er en lovbestemt pensjonsordning for arbeidstakere til sjøs. Vår hovedoppgave er å utbetale pensjon til arbeidstakere til sjøs fra 60 – 67 år, og ta i mot innbetaling av premie fra arbeidstakere og arbeidsgivere.</value>
+	</data>
+	<data name="About_header2" xml:space="preserve">
+    	<value>Hvordan administreres PTS</value>
+	</data>
+	<data name="About_desc2" xml:space="preserve">
+    	<value>Ordningen administreres av PTS som er en offentlig virksomhet under Arbeids og Sosialdepartementet.  Vi ledes av et styre på fem medlemmer hvorav fire av medlemmene er oppnevnt av arbeidstakernes og arbeidsgiverens organisasjoner, mens Arbeids og sosialdepartementet utpeker styrets leder.  Vi har 25 ansatte fordelt på 5 avdelinger som er direkte underlagt direktøren.</value>
+	</data>
+
+	<data name="About_postbox" xml:space="preserve">
+    	<value>Postboks </value>
+	</data>
+	<data name="About_telephone" xml:space="preserve">
+    	<value>tlf: </value>
+	</data>
+	<data name="About_email" xml:space="preserve">
+    	<value>e-post: </value>
+	</data>	
+
+	<!-- Push Notifications Popup -->
+	<data name="Push_notification_title" xml:space="preserve">
+    	<value>Varsler</value>
+	</data>
+	<data name="Push_notification_desc" xml:space="preserve">
+    	<value>For å gi deg en bedre brukeropplevelse kan du aktivere varselfunksjonen. Du vil da motta et varsel når din fartstid er endret, når du mottar din pensjonsslipp, når vi sender deg en melding og når vi legger ut aktuelle nyheter.</value>
+	</data>
+	<data name="Push_notification_accept" xml:space="preserve">
+    	<value>Tillat</value>
+	</data>
+	<data name="Push_notification_cancel" xml:space="preserve">
+    	<value>Avbryt</value>
+	</data>
+
+	<data name="Push_notification_local_title" xml:space="preserve">
+    	<value>Varsler deaktivert</value>
+	</data>
+	<data name="Push_notification_local_desc" xml:space="preserve">
+    	<value>For og aktivere varsler må du logge inn igjen med min ID. Trykk her for å gå til applikasjonen</value>
+	</data>
+	
+	<!-- Static resources -->
+	<data name="Static_email" xml:space="preserve">
+    	<value>post@pts.no</value>
+	</data>
+	<data name="Static_email_draft_title" xml:space="preserve">
+    	<value>[Ditt PTS] tilbakemelding</value>
+	</data>
+	<data name="Static_email_draft_body" xml:space="preserve">
+    	<value></value>
+	</data>
+
+	<data name="Static_phone_number" xml:space="preserve">
+    	<value>22 35 89 00</value>
+	</data>
+	<data name="Static_call_title" xml:space="preserve">
+    	<value>Ring PTS</value>
+	</data>
+	<data name="Static_call_desc" xml:space="preserve">
+    	<value>Ønsker du å ringe PTS på tlf. 22 35 89 00?</value>
+	</data>
+	<data name="Static_call_yes_action" xml:space="preserve">
+    	<value>Ring nå</value>
+	</data>
+	<data name="Static_call_no_action" xml:space="preserve">
+    	<value>Avbryt</value>
+	</data>
+
+	<data name="Static_address" xml:space="preserve">
+    	<value>8143 Dep, N-0033 Oslo</value>
+	</data>
+
+	<!-- Error handling -->
+	<data name="Generic_internet_error_title" xml:space="preserve">
+    	<value>Ingen internettilgang</value>
+	</data>
+	<data name="Generic_internet_error_desc" xml:space="preserve">
+    	<value>Du må være koblet til internett for å bruke denne funksjonen</value>
+	</data>
+	<data name="Generic_internet_error_ok" xml:space="preserve">
+    	<value>OK</value>
+	</data>
+	
+</root>

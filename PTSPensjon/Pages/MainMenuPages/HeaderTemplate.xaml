@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 x:Class="PTSPensjon.HeaderTemplate">
+
+	
+		<StackLayout>
+			<Image Source="header.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Start" HeightRequest="30"  />
+		</StackLayout>
+
+		<StackLayout Padding="16" HorizontalOptions="Center" VerticalOptions="End" >
+			<Image Source="logo.png" HeightRequest="23" />
+        </StackLayout>
+		<StackLayout Padding="16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Start">
+				<Image Source="BackButton.png" HeightRequest="20" />
+		</StackLayout>
+
+		<StackLayout Padding="0,0,20,16" Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+			<Image Source="MasterMenuIcon.png" HeightRequest="20" />
+		</StackLayout>
+</ContentView>

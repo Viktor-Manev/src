@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="PTSPensjon.IntroPage_1">
+			<!--xmlns:controls="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions">-->
+
+	<ContentPage.Content>
+		<StackLayout Padding="0" BackgroundColor="White">
+			<Image Source="Welcome Screen 1.png" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Aspect="AspectFit" > </Image>
+		</StackLayout>
+	</ContentPage.Content>
+
+	<!--<ContentPage.Padding>
+		<OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+	</ContentPage.Padding>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="30" />
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="Auto" />
+			<ColumnDefinition Width="Auto" />
+		</Grid.ColumnDefinitions>
+		<BoxView Color="Silver" HeightRequest="30" WidthRequest="30" Grid.Row="0" Grid.Column="0" />
+		<BoxView Color="Silver" HeightRequest="30" WidthRequest="30" Grid.Row="0" Grid.Column="1" />
+		<BoxView Color="Silver" HeightRequest="30" WidthRequest="30" Grid.Row="0" Grid.Column="2" />
+		<BoxView Color="Silver" HeightRequest="30" WidthRequest="30" Grid.Row="0" Grid.Column="3" />
+	</Grid>-->
+
+	<!--<Grid RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="56" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <controls:CarouselViewControl x:Name="myCarousel"
+                                      Grid.Row="0"
+                                      Grid.Column="0"
+                                      HorizontalOptions="FillAndExpand"
+                                      VerticalOptions="FillAndExpand"
+                                      AnimateTransition="true"
+                                      IndicatorsShape="Circle"
+                                      InterPageSpacing="10"
+                                      InterPageSpacingColor="Red"
+                                      Orientation="Horizontal"
+                                      ShowIndicators="true">
+        </controls:CarouselViewControl>
+
+        <Grid Grid.Row="1"
+              Grid.Column="0"
+              BackgroundColor="Silver"
+              Padding="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="80" />
+            </Grid.ColumnDefinitions>
+            <Label x:Name="prevBtn"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   HorizontalTextAlignment="Start"
+                   Text="Prev"
+                   VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPrev" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="addPageBtn"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"
+                   Text="Add Page"
+                   VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnAdd" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label x:Name="nextBtn"
+                   Grid.Row="0"
+                   Grid.Column="2"
+                   HorizontalTextAlignment="End"
+                   Text="Next"
+                   VerticalTextAlignment="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnNext" />
+                </Label.GestureRecognizers>
+            </Label>
+        </Grid>
+    </Grid>-->
+	
+</ContentPage>
